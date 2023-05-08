@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
-  <meta charset=utf-8">
+  <meta charset=utf-8>
   <title>Aliens Abducted Me - Report an Abduction</title>
 </head>
 <body>
