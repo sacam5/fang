@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset=utf-8">
   <title>Aliens Abducted Me - Report an Abduction</title>
 </head>
 <body>
@@ -19,9 +18,13 @@
   $email = $_POST['email'];
   $other = $_POST['other'];
 
-  $to = 'owen@aliensabductedme.com';  $subject = 'Aliens Abducted Me - Abduction Report';  $msg = "$name was abducted $when_it_happened and was gone for $how_long.\n" .    "Number of aliens: $how_many\n" .
+  $to = 'sacaraskovic5@gmail.com';
+  $subject = 'Aliens Abducted Me - Abduction Report';
+  $msg = "$name was abducted $when_it_happened and was gone for $how_long.\n" .
+    "Number of aliens: $how_many\n" .
     "Alien description: $alien_description\n" .
-    "What they did: $what_they_did\n" .    "Fang spotted: $fang_spotted\n" .
+    "What they did: $what_they_did\n" .
+    "Fang spotted: $fang_spotted\n" .
     "Other comments: $other";
   mail($to, $subject, $msg, 'From:' . $email);
 
@@ -30,7 +33,8 @@
   echo ' and were gone for ' . $how_long . '<br />';
   echo 'Number of aliens: ' . $how_many . '<br />';
   echo 'Describe them: ' . $alien_description . '<br />';
-  echo 'The aliens did this: ' . $what_they_did . '<br />';  echo 'Was Fang there? ' . $fang_spotted . '<br />';
+  echo 'The aliens did this: ' . $what_they_did . '<br />';
+  echo 'Was Fang there? ' . $fang_spotted . '<br />';
   echo 'Other comments: ' . $other . '<br />';
   echo 'Your email address is ' . $email;
 ?>
